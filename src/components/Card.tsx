@@ -4,7 +4,7 @@ interface RecipeCardProps {
   recipe: EdamamRecipe;
 }
 
-function RecipeCard({ recipe }: RecipeCardProps): React.ReactElement {
+function Card({ recipe }: RecipeCardProps): React.ReactElement {
   return (
     <>
       <div className="group aspect-h-7 aspect-w-9 block w-full overflow-hidden rounded-md focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
@@ -28,4 +28,4 @@ function RecipeCard({ recipe }: RecipeCardProps): React.ReactElement {
   );
 }
 
-export default RecipeCard;
+export default Card;

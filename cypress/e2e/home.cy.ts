@@ -17,4 +17,20 @@ describe('Home Page E2E', () => {
       expect(chickenItems.length).to.be.at.least(2);
     });
   });
+
+  it('navigates to the individual recipe page', () => {
+    cy.visit('http://localhost:3000');
+
+    cy.get('li').first().click();
+
+    cy.contains('Ingredients', { timeout: 10000 }).should('be.visible');
+  });
+
+  it('loads an individual recipe page with api response', () => {
+    cy.visit('http://localhost:3000/recipes/0d6bfaa492fd47daa4c4b1270787d3c5');
+
+    cy.contains('Drunken Chicken Recipe', { timeout: 10000 }).should(
+      'be.visible',
+    );
+  });
 });

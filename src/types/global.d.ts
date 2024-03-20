@@ -1,3 +1,7 @@
+type Params = {
+  [key: string]: string | number;
+};
+
 type EdamamResponse = {
   from: number;
   to: number;

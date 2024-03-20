@@ -1,4 +1,3 @@
-import Home from '@/app/page';
 import { render, screen } from '@testing-library/react';
 import Recipes from '@/components/Recipes';
 
@@ -6,12 +5,14 @@ describe('Recipes', () => {
   const recipe1 = {
     label: 'Chicken and Waffles',
     image: 'https://some-image111.com',
+    uri: 'https://some-link.com/param/edamam.owl#recipe_111',
     externalId: '111',
   } as EdamamRecipe;
 
   const recipe2 = {
     label: 'Banana Pudding',
     image: 'https://some-image222.com',
+    uri: 'https://some-link.com/param/edamam.owl#recipe_222',
     externalId: '222',
   } as EdamamRecipe;
 
