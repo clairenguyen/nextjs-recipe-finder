@@ -1,6 +1,6 @@
 import Recipes from '@/components/Recipes';
-import * as example from '@/data/example-response.json';
 import { getRecipes } from '@/app/services/recipes-service';
+import * as example from '@/data/example-response.json';
 
 export default async function HomePage() {
   const data: EdamamResponse = await getRecipes();
